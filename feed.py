@@ -24,7 +24,6 @@ xml_tree.SubElement(channel_element, 'link').text = link_prefix
 
 xml_tree.SubElement(channel_element, 'itunes:category', {'text':yaml_data['category']})
 
-
 for item in yaml_data['item']:
     item_element = xml_tree.SubElement(channel_element, 'item')
     xml_tree.SubElement(item_element, 'title').text = item['title']
